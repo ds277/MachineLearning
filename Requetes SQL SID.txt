@@ -1,0 +1,7 @@
+1) Requête SID à partir du nom ou du SID 
+	select a.SID, a.ID, a.NOM, b.SID_GROUPE, c.NOM_GROUPE
+	from prod.SID_ID_USER a inner join prod.SID_GROUPES b on a.SID = b.SID inner join prod.SID_LIB_GROUPES c on b.SID_GROUPE = c.SID_GROUPE
+	where 
+		--a.NOM like 'STEV%'
+		--or
+		a.SID = 'S-1-5-21-2083222152-2072715872-640688899-1016'
